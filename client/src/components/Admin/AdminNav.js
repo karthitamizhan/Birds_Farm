@@ -1,7 +1,9 @@
 import React from "react";
 import "../../css/Navbar1.css";
 import { NavLink, Outlet } from "react-router-dom";
-import logo1 from "../../assets/logo1b.png";
+// import logo1 from "../../assets/logo1b.png";
+import logo1 from "../../assets/mbf.png"
+
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../UserAuthContext";
 export default function AdminNav(){
@@ -27,11 +29,11 @@ export default function AdminNav(){
             <div class="navb-items nav-items d-none d-xl-flex">
 
                 <div class="item">
-                    <NavLink to="/form"  >Add&nbsp;Product</NavLink>
+                    <NavLink to="/form"  >Add&nbsp;Birds</NavLink>
                 </div>
 
                 <div class="item">
-                    <NavLink to="/viewproduct"  >Edit&nbsp;Product</NavLink>
+                    <NavLink to="/viewproduct"  >Edit&nbsp;Birds</NavLink>
                 </div>
 
                 <div class="item">
@@ -63,7 +65,7 @@ export default function AdminNav(){
                                 <div class="modal-body">
 
                                     <div class="modal-line">
-                                    <i class="fa fa-plus" aria-hidden="true"></i><a href="/form">Add Product</a>
+                                    <i class="fa fa-plus" aria-hidden="true"></i><a href="/form">Add Products</a>
                                     </div>
 
                                     <div class="modal-line">

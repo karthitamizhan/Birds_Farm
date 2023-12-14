@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import "../../css/viewproduct.css";
-import logo1 from "../../assets/logo1b.png";
+// import logo1 from "../../assets/logo1b.png";
+import logo1 from "../../assets/mbf.png"
+
 import ScrollToTop from "../top.js";
 import AdminNav from "./AdminNav";
 import PreLoader from "../PreLoader";
@@ -11,7 +13,7 @@ function ViewProduct() {
     const [price, setPrice] = useState("");
     const [stocks,setStocks] = useState("");
 
-    Axios.get("https://srisaravamoils.onrender.com/postItem", {
+    Axios.get("http://localhost:8080/postItem", {
     }).then((res) => {
         const data = res.data
         setSell(data);
@@ -21,7 +23,7 @@ function ViewProduct() {
         if (window.confirm("Do you want to delete the product") === true) {
         // alert("Do you want to delete the prod uct");
         console.log(id);
-        await Axios.delete(`https://srisaravamoils.onrender.com/deleteprod/${id}`);
+        await Axios.delete(`http://localhost:8080/deleteprod/${id}`);
         }
     }
     const handleUpdate = async (e, id) => {
@@ -32,10 +34,10 @@ function ViewProduct() {
             console.log(stocks);
             if(stocks!=="")
             {
-                await Axios.put(`https://srisaravamoils.onrender.com/update/${id}`,{stocks:stocks});
+                await Axios.put(`http://localhost:8080/update/${id}`,{stocks:stocks});
             }
             else if(price!==""){
-                await Axios.put(`https://srisaravamoils.onrender.com/update/${id}`,{price:price});
+                await Axios.put(`http://localhost:8080/update/${id}`,{price:price});
             }
             
         }
@@ -55,14 +57,14 @@ function ViewProduct() {
                     <hr></hr>
                     <h5 className="product-name"><b>Name :</b> {val.name}</h5>
                     <h5 className="product-name"><b>Price :</b>Rs. {val.price}</h5>
-                    <h5 className="product-name"><b>Liter :</b> {val.liter}</h5>                    
-                    <h5 className="product-name"><b>Stocks :</b> {val.stocks}</h5>
+                    <h5 className="product-name"><b>Age :</b> {val.liter}</h5>                    
+                    <h5 className="product-name"><b>Paris :</b> {val.stocks}</h5>
 
                     
                     <form class="form-inline"   >
                         <div class="form-group">
                             <input type="text" class="form-control" id="price" placeholder="Enter New Price" style={{marginTop:"5px",marginBottom:"5px"}} onChange={(e) => { setPrice(e.target.value) }} required/>
-                            <input type="text" class="form-control" id="stock" placeholder="Enter New Stock" onChange={(e) => { setStocks(e.target.value) }} required/>
+                            <input type="text" class="form-control" id="stock" placeholder="Enter New Paris" onChange={(e) => { setStocks(e.target.value) }} required/>
                         </div>
                     </form>
                     <div className="update-delete-button">
@@ -86,23 +88,23 @@ function ViewProduct() {
         <>
             <AdminNav />
             <PreLoader />
-            <h4 className="Products"><i class="fa-solid fa-droplet"></i>&nbsp; Products</h4>
+            <h4 className="Products"><i class="fa-solid fa-droplet"></i>&nbsp; Birds</h4>
             <div className="flexing">{Body}</div>
             <div className="backimg2">
                 <div className="compdetails text-center">
                     <img src={logo1} alt="compname" className="comname"></img>
                     <div className="row text-center">
                         <div className="col-md-4">
-                            <h5 className="bottom"> Any Doubts ? :</h5>
-                            <h6 className="doubt"><i class="fa-solid fa-phone"></i>&nbsp;9788718180</h6>
+                            <h5 className="bottom" style={{color:"red"}}> Any Doubts ? :</h5>
+                            <h6 className="doubt"><i class="fa-solid fa-phone"></i>&nbsp;7373000019</h6>
                         </div>
                         <div className="col-md-4">
-                            <h5 className="bottom">Address :</h5>
-                            <h6 className="address"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Sri Vaari Electrical Building,<br></br> Karur main road,<br></br> Kalipalayam Post,<br></br>Dharapuram, Tiruppur District,<br></br> Tamil nadu - 638661.</h6>
+                            <h5 className="bottom" style={{color:"red"}}>Address :</h5>
+                            <h6 className="address"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;113/1A1, Ponmullai Nagar,<br></br> Moolakarai,<br></br> Nirmalamadha School Near,<br></br>Nasiyanur, Erode District,<br></br>Tamil Nadu - 638 107.</h6>
                         </div>
                         <div className="col-md-4">
-                            <h5 className="bottom">Email :</h5>
-                            <h6 className="email"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;srisarvamoils@gmail.com</h6>
+                            <h5 className="bottom" style={{color:"red"}}>Email :</h5>
+                            <h6 className="email"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;ragul737300@gmail.com</h6>
                         </div>
                     </div>
                 </div>

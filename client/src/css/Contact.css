@@ -1,5 +1,6 @@
 .contact {
-    background-color: #64f47c;
+    /* background-color: #64f47c; */
+    background-color: #f4e664;
     text-align: center;
     margin-top: 2%;
     margin-left: 1%;
@@ -52,8 +53,8 @@
 }
 .contactback {
 
-    height: 80vh;
-    background-image: url('../assets/wave3.svg');
+    height: 100vh;
+    /* background-image: url('../assets/bird1.svg'); */
     background-repeat: no-repeat;
     background-size: cover;
 

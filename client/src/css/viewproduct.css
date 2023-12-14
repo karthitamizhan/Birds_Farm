@@ -41,7 +41,7 @@
     border-radius: 5px;
     overflow: hidden;
     margin: 2% 2%;
-    background-color: rgba(226, 237, 244, 0.815);
+    background-color: rgba(170, 218, 248, 0.815);
 
 }
 
@@ -68,7 +68,7 @@
     border-radius: 30px;
     border: none;
     outline: none;
-    background-color: rgb(235, 173, 57);
+    background-color: rgb(57, 235, 63);
     color: white;
     width: 40%;
     height: 40px;
@@ -78,7 +78,7 @@
     margin-left: 15px;
 }
 .product-add-buttons:hover{
-    background-color: #29065e;
+    background-color: #bfea17;
 }
 .update-delete-button{
     display: inline;

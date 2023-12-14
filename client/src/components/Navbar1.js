@@ -2,6 +2,7 @@ import React from "react"
 import { Outlet,NavLink } from "react-router-dom";
 import "../css/Navbar1.css";
 import logo1 from "../assets/logo1b.png";
+import logo2 from "../assets/mbf.png"
 
 
 function Header(props) {
@@ -14,7 +15,7 @@ function Header(props) {
                 <div class="container-fluid">
 
                     <div class="navb-logo">
-                        <img src={logo1} alt="Logo" />
+                        <img src={logo2} alt="Logo" />
                     </div>
 
                     <div class="navb-items nav-items d-none d-xl-flex">
@@ -31,9 +32,9 @@ function Header(props) {
                             <NavLink to="/contact" >Contact</NavLink>
                         </div>
 
-                        <div class="item">
+                        {/* <div class="item">
                             <NavLink to="/about" >About</NavLink>
-                        </div>
+                        </div> */}
                         <div class="item">
                             <NavLink to="/userorder" >Order</NavLink>
                         </div>

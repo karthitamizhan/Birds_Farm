@@ -5,9 +5,7 @@ import Home from "../src/components/Home";
 import Products from "./components/Products";
 import Contact from "../src/components/Contact";
 import About from "../src/components/About";
-
 import NoPage from "../src/components/NoPage";
-
 import Cart from './components/Cart';
 import Form from "./components/Form";
 import "./index.css";

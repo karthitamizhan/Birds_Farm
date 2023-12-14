@@ -1,7 +1,9 @@
 import "../css/Products.css";
 import React,{useState} from "react";
 import Axios from "axios";
-import logo1 from "../assets/logo1b.png";
+// import logo1 from "../assets/logo1b.png";
+import logo1 from "../assets/mbf.png"
+
 import ScrollToTop from "../components/top.js";
 import PreLoader from "./PreLoader";
 import Whatsapp from "./Whatsapp";
@@ -11,7 +13,7 @@ function Products(props){
     const [sell, setSell] = useState([]);
 
 
-    Axios.get("https://srisaravamoils.onrender.com/postItem", {
+    Axios.get("http://localhost:8080/postItem", {
 
     }).then((res) => {
          
@@ -31,8 +33,8 @@ function Products(props){
                     <hr></hr>
                     <h5 className="product-name"><b>Name :</b> {val.name}</h5>
                     <h5 className="product-name"><b>Price :</b>Rs. {val.price}</h5>
-                    <h5 className="product-name"><b>Liter :</b> {val.liter}</h5>
-                    <h5 className="product-name"><b>Stocks :</b> {val.stocks}</h5>
+                    <h5 className="product-name"><b>Age :</b> {val.liter}</h5>
+                    <h5 className="product-name"><b>Pairs :</b> {val.stocks}</h5>
                     <button className="product-add-button" onClick={()=>props.handleAddProduct(val)}>Add to Cart</button>
                 </div>
                 <div>
@@ -58,16 +60,16 @@ function Products(props){
         <img src={logo1} alt="compname" className="comname"></img>
         <div className="row text-center">
           <div className="col-md-4">
-            <h5 className="bottom"> Any Doubts ? :</h5>
-            <h6 className="doubt"><i class="fa-solid fa-phone"></i>&nbsp;9788718180</h6>
+            <h5 className="bottom" style={{color:"red"}}> Any Doubts ? :</h5>
+            <h6 className="doubt"><i class="fa-solid fa-phone"></i>&nbsp;7373000019</h6>
           </div>
           <div className="col-md-4">
-            <h5 className="bottom">Address :</h5>
-            <h6 className="address"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Sri Vaari Electrical Building,<br></br> Karur main road,<br></br> Kalipalayam Post,<br></br>Dharapuram, Tiruppur District,<br></br> Tamil nadu - 638661.</h6>
+            <h5 className="bottom" style={{color:"red"}}>Address :</h5>
+            <h6 className="address"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;113/1A1, Ponmullai Nagar,<br></br> Moolakarai,<br></br> Nirmalamadha School Near,<br></br>Nasiyanur, Erode District,<br></br> Tamil Nadu - 638 107.</h6>
           </div>
           <div className="col-md-4">
-            <h5 className="bottom">Email :</h5>
-            <h6 className="email"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;srisarvamoils@gmail.com</h6>
+            <h5 className="bottom" style={{color:"red"}}>Email :</h5>
+            <h6 className="email"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;ragul737300@gmail.com</h6>
           </div>
         </div>
       </div>

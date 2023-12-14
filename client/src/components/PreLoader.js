@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { preLoaderAnim } from "../animation/animation";
 import "../css/PreLoader.css";
-import logo1 from "../assets/logo1b.png";
+// import logo1 from "../assets/logo1b.png";
+import logo2 from "../assets/mbf.png";
 function PreLoader()
 {
 
@@ -12,7 +13,7 @@ function PreLoader()
     return(
         <div className="preloader">
             <div className="texts-container">
-                <img src={logo1} alt="logo" width="65%" height="80%"></img>
+                <img src={logo2} alt="logo" width="50%" height="50%"></img>
                 
             </div>
         </div>

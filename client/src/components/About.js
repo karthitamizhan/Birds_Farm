@@ -1,7 +1,8 @@
 import "../css/About.css";
 import Typer from "./typical";
 import woodp from "../assets/woodp.jpg";
-import logo1 from "../assets/logo1b.png";
+// import logo1 from "../assets/logo1b.png";
+import logo1 from "../assets/mbf.png"
 import ScrollToTop from "../components/top.js";
 import Whatsapp from "./Whatsapp";
 function About() {
@@ -63,15 +64,15 @@ function About() {
         <div className="row text-center">
           <div className="col-md-4">
             <h5 className="bottom"> Any Doubts ? :</h5>
-            <h6 className="doubt"><i class="fa-solid fa-phone"></i>&nbsp;9788718180</h6>
+            <h6 className="doubt"><i class="fa-solid fa-phone"></i>&nbsp;7373000019</h6>
           </div>
           <div className="col-md-4">
             <h5 className="bottom">Address :</h5>
-            <h6 className="address"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Sri Vaari Electrical Building,<br></br> Karur main road,<br></br> Kalipalayam Post,<br></br>Dharapuram, Tiruppur District,<br></br> Tamil nadu - 638661.</h6>
+            <h6 className="address"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;113/1A1, Ponmullai Nagar,<br></br> Moolakarai,<br></br> Nirmalamadha School Near,<br></br>Nasiyanur, Erode District,<br></br> Tamil Nadu - 638 107.</h6>
           </div>
           <div className="col-md-4">
             <h5 className="bottom">Email :</h5>
-            <h6 className="email"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;srisarvamoils@gmail.com</h6>
+            <h6 className="email"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;ragul737300@gmail.com</h6>
           </div>
         </div>
       </div>
